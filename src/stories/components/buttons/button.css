@@ -1,0 +1,120 @@
+.button {
+  border: none;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* The stylings for the Normal buttons*/
+.norm {
+  background: #0153d5;
+  width: 150px;
+  height: 56px;
+}
+
+.hover {
+  background: #2b7eff;
+  width: 150px;
+  height: 56px;
+}
+
+.focus {
+  background: #0164ff;
+  width: 150px;
+  height: 56px;
+}
+
+.clicked {
+  background: #013280;
+  width: 150px;
+  height: 56px;
+}
+
+.loading {
+  background: #0153d5;
+  width: 150px;
+  height: 56px;
+}
+
+.disable {
+  background: #8d8d8e;
+  width: 150px;
+  height: 56px;
+}
+
+/* The stylings for the Medium buttons*/
+
+.norm_md {
+  background: #0153d5;
+  width: 125px;
+  height: 50px;
+}
+
+.hover_md {
+  background: #2b7eff;
+  width: 125px;
+  height: 50px;
+}
+
+.focus_md {
+  background: #0164ff;
+  width: 125px;
+  height: 50px;
+}
+
+.clicked_md {
+  background: #013280;
+  width: 125px;
+  height: 50px;
+}
+
+.loading_md {
+  background: #0153d5;
+  width: 125px;
+  height: 50px;
+}
+
+.disable_md {
+  background: #8d8d8e;
+  width: 125px;
+  height: 50px;
+}
+
+/* The stylings for the Small buttons*/
+
+.norm_sm {
+  background: #0153d5;
+  width: 100px;
+  height: 46px;
+}
+
+.hover_sm {
+  background: #2b7eff;
+  width: 100px;
+  height: 46px;
+}
+
+.focus_sm {
+  background: #0164ff;
+  width: 100px;
+  height: 46px;
+}
+
+.clicked_sm {
+  background: #013280;
+  width: 100px;
+  height: 46px;
+}
+
+.loading_sm {
+  background: #0153d5;
+  width: 100px;
+  height: 46px;
+}
+
+.disable_sm {
+  background: #8d8d8e;
+  width: 100px;
+  height: 46px;
+}
