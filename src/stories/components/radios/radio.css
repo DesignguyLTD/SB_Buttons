@@ -1,0 +1,17 @@
+.radio {
+    border: 1px solid #212121;
+    width: 24px;
+    height: 24px;
+    color: #0164FF;
+    cursor: pointer;
+}
+
+.radio:hover {
+    border: 1px solid #0153D5;
+    color:  #0153D5;
+}
+
+.radio:focus {
+    border: 1px solid #212121;
+    color: #0153D5;
+}

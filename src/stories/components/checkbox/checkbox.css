@@ -1,0 +1,18 @@
+.checkbox {
+    border: 1px solid #B3B3B4;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #0164FF;
+}
+
+.checkbox:hover {
+    color: 5px solid #0143AA;
+    border: #0143AA;
+}
+
+.checkbox:focus {
+    border: #1B1C1E;
+    background: 2px solid #0663C7;
+}
