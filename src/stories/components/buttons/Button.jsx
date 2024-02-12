@@ -14,7 +14,8 @@ const Button = (props) => {
   const { variant = "norm", children, ...rest } = props;
 
   return (
-    <button className={`button ${variant}`} {...rest} onClick={handleClick}>
+    <button className={`button ${isClicked ? "active" : "inactive"} ${variant}`} {...rest} onClick={handleClick}>
+
       {children}
       {isClicked ? (
         <TbReload className="icon" />

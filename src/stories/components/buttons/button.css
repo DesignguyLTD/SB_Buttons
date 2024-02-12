@@ -11,15 +11,15 @@
   background: #2b7eff;
 }
 
-.button:focus {
+.button.focus {
   background: #0164ff;
 }
 
-.button:active {
+.button.active {
   background: #013280;
 }
 
-.islooading {
+.isloading {
   background: #0153d5;
 }
 

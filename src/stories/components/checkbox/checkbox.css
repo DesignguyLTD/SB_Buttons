@@ -4,15 +4,25 @@
     height: 24px;
     border-radius: 4px;
     cursor: pointer;
-    color: #0164FF;
 }
 
 .checkbox:hover {
-    color: 5px solid #0143AA;
-    border: #0143AA;
+    border: 1px solid #0164FF;
 }
 
 .checkbox:focus {
-    border: #1B1C1E;
-    background: 2px solid #0663C7;
+    border: 1px solid #1B1C1E;
 }
+
+.checkbox.checked {
+    background: #0164FF;
+}
+
+.checkbox.checked:hover {
+    background: #0143AA;
+}
+
+.checkbox.checked:focus {
+    background: #0663C7;
+}
+

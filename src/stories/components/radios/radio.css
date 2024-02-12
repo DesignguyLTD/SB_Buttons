@@ -1,17 +1,34 @@
 .radio {
-    border: 1px solid #212121;
-    width: 24px;
-    height: 24px;
-    color: #0164FF;
-    cursor: pointer;
+  border: 1px solid #212121;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 
 .radio:hover {
-    border: 1px solid #0153D5;
-    color:  #0153D5;
+  border: 1px solid #0153d5;
 }
 
 .radio:focus {
-    border: 1px solid #212121;
-    color: #0153D5;
+  border: 1px solid #414244;
+}
+
+/* The blue div when radio is clicked*/
+.radio.clicked {
+  background: #0164ff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.radio.clicked:hover {
+  background: #0153d5;
+}
+
+.radio.clicked:focus {
+  background: #0153d5;
 }
