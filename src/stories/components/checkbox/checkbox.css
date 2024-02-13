@@ -4,6 +4,9 @@
     height: 24px;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkbox:hover {
@@ -16,6 +19,7 @@
 
 .checkbox.checked {
     background: #0164FF;
+    color: white;
 }
 
 .checkbox.checked:hover {
@@ -24,5 +28,32 @@
 
 .checkbox.checked:focus {
     background: #0663C7;
+}
+
+.checkbox.errorable {
+    /*background: #C70404;*/
+    color: #C70404;
+    border: 1px solid #C70404;
+}
+
+.checkbox.error {
+    background: #C70404;
+    color: white;
+    border: 1px solid #C70404;
+}
+
+
+.checkbox.disabled {
+    background: #8D8D8E;
+    color: white;
+}
+
+.checkbox.disabled:hover {
+    background: #8D8D8E;
+    border: 1px solid #8D8D8E;
+}
+
+.checkbox.able {
+    border: 1px solid #8D8D8E;
 }
 

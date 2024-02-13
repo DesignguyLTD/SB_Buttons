@@ -5,6 +5,9 @@
   padding: 16px;
   border-radius: 12px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -19,7 +22,7 @@
   background: #013280;
 }
 
-.isloading {
+.button.active.after {
   background: #0153d5;
 }
 
@@ -29,10 +32,21 @@
 
 .icon {
   padding-left: 10px;
-  font-size: 10px;
+  font-size: 20px;
   color: #013280;
 }
 
+.disabled {
+  background: #8D8D8E;
+}
+
+.disabled .icon {
+  color: #292D32;
+}
+
+.disabled:hover{
+  background:#8D8D8E;
+}
 /* The stylings for the Normal buttons*/
 .normal {
   width: 150px;

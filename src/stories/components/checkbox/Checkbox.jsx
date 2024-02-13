@@ -1,21 +1,26 @@
 import React from "react";
 import { useState } from 'react'
 import "./checkbox.css";
-import { FaCheck } from "react-icons/fa";
+import {FaCheck} from "react-icons/fa";
 
 
 const Checkbox = (props) => {
   const { variant = "checkbox", children, ...rest } = props;
   const [isChecked, setIsChecked] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
+    //setIsError(!isError);
+    //setIsDisabled(!isDisabled);
+
   };
 
   return (
     <div onClick={handleCheckboxChange} {...rest}>
-      <div className="checkbox">
-      {isChecked &&  <img src={<FaCheck style={{ width: '10px', height: '10px' }} />} className="checkbox checked" />}
+      <div className={`checkbox ${isChecked ? 'checked' : ''} ${isError ? 'error' : ''} ${isDisabled ? 'disabled' : ''}`}>
+      {(isChecked || isError || isDisabled) &&  <FaCheck />}
       <div />
       </div>
     </div>

@@ -2,25 +2,34 @@ import React from "react";
 import { useState } from "react";
 import "./button.css";
 import { TbReload } from "react-icons/tb";
-import { FaGreaterThan } from "react-icons/fa";
+import { LiaGreaterThanSolid } from "react-icons/lia";
 
 const Button = (props) => {
-  const [isClicked, setIsClicked] = useState(false);
+  const [clickedStatus, setClickedStatus] = useState('not-clicked');
+
+
+  const { variant = "normal", disabled, children, ...rest } = props;
 
   const handleClick = () => {
-    setIsClicked(!isClicked);
+    if (disabled) return;
+    if (clickedStatus === 'clicked' || clickedStatus === 'loading'){
+      setClickedStatus("not-clicked")
+    } else{
+      setClickedStatus('clicked');
+      setTimeout(() => {
+        setClickedStatus('loading');
+      }, 3000);
+    }
   };
 
-  const { variant = "norm", children, ...rest } = props;
-
   return (
-    <button className={`button ${isClicked ? "active" : "inactive"} ${variant}`} {...rest} onClick={handleClick}>
+    <button className={`button ${clickedStatus === "not-clicked" ? "inactive" : clickedStatus === 'clicked' ? "active" : 'loading'} ${variant} ${disabled ? 'disabled' : ''}`} {...rest} onClick={handleClick}>
 
       {children}
-      {isClicked ? (
+      {clickedStatus === 'loading' ? (
         <TbReload className="icon" />
       ) : (
-        <FaGreaterThan className="icon" />
+        <LiaGreaterThanSolid className="icon" />
       )}
     </button>
   );
