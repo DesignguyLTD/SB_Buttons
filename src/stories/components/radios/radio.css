@@ -32,3 +32,14 @@
 .radio.clicked:focus {
   background: #0153d5;
 }
+
+.radio.signal .radio.clicked {
+  background: #C70404;
+  border: 1px solid #C70404;
+}
+
+.radio.disable .radio.clicked {
+  background: #EEF5FC; 
+  border: 1px solid #EEF5FC;
+  pointer-events: none;
+}

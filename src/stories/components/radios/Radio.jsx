@@ -5,15 +5,17 @@ import "./radio.css";
 const Radio = (props) => {
 
   const [isClicked, setIsClicked] = useState(null);
-  const { variant = "radio", children, ...rest } = props;
+  const { variant, disabled, error, children, ...rest } = props;
 
   const toggleVisibility = () => {
+    if (disabled) return;
+    if (error) return;
     setIsClicked(!isClicked);
   };
   // 
   return (
     <div onClick={toggleVisibility} {...rest}>
-      <div className="radio">
+      <div className={`radio ${disabled ? "disable" : ""} ${error ? "signal" : ""}`}>
       {isClicked && <div className="radio clicked" />}
       </div>
     </div>

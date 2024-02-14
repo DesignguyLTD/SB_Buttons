@@ -36,15 +36,16 @@
   color: #013280;
 }
 
-.disabled {
+.disable {
   background: #8D8D8E;
+  pointer-events: none;
 }
 
-.disabled .icon {
+.disable .icon {
   color: #292D32;
 }
 
-.disabled:hover{
+.disable:hover{
   background:#8D8D8E;
 }
 /* The stylings for the Normal buttons*/

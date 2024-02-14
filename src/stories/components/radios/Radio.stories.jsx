@@ -14,6 +14,8 @@ const Template = (args) => <Radio {...args} />;
 export const Normal = Template.bind({});
 Normal.args = {
   variant: "radio",
+  error: false,
+  disabled: false
 };
 
 

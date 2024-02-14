@@ -14,4 +14,6 @@ const Template = (args) => <Checkbox {...args} />;
 export const Normal = Template.bind({});
 Normal.args = {
   variant: "checkbox",
+  disabled: false,
+  error: false
 };
