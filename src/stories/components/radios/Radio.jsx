@@ -16,7 +16,7 @@ const Radio = (props) => {
   return (
     <div onClick={toggleVisibility} {...rest}>
       <div className={`radio ${disabled ? "disable" : ""} ${error ? "signal" : ""}`}>
-      {isClicked && <div className="radio clicked" />}
+      {(isClicked || disabled)&& <div className="radio clicked" />}
       </div>
     </div>
   );
